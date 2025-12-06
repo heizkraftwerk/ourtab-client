@@ -12,6 +12,6 @@ class ViewBase(View):
         return ft.View(
             self.route,
             [
-                ft.ElevatedButton("Register", on_click=self._page.go("/register")),
+                ft.ElevatedButton("Register", on_click=lambda e: self._page.go("/register")),
             ],
         )
