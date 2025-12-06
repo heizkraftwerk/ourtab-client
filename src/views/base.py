@@ -5,8 +5,9 @@ import flet as ft
 
 class View(ABC):
 
-    def __init__(self, route: str):
+    def __init__(self, route: str, page: ft.Page):
         self._route = route
+        self._page = page
 
     @property
     def route(self) -> str:
