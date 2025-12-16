@@ -1,6 +1,7 @@
 import flet as ft
-from .base import View
 
+from .base import View
+from ..utils import Color
 
 class ViewOverview(View):
 
@@ -15,7 +16,7 @@ class ViewOverview(View):
                 color='#F1F3E0'),
             padding=20,
             alignment=ft.alignment.center,
-            bgcolor='#778873',
+            bgcolor=Color.PRIMARY.value,
             width=float("inf"),
             height=150,
             border_radius=12,
