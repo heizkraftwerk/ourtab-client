@@ -1,6 +1,6 @@
 import flet as ft
 
-from .views import ViewBase, ViewManager, ViewRegister, ViewLogin, ViewOverview
+from .views import ViewBase, ViewManager, ViewRegister, ViewLogin, ViewOverview, ViewProfile
 
 
 def main(page: ft.Page):
@@ -10,6 +10,7 @@ def main(page: ft.Page):
     view_login = ViewLogin("/login", page=page)
     view_register = ViewRegister("/register", page=page)
     view_overview = ViewOverview("/overview", page=page)
+    view_profile = ViewProfile("/profile", page=page)
 
     view_manager = ViewManager(
         page,
@@ -17,7 +18,8 @@ def main(page: ft.Page):
         [
             view_register,
             view_login,
-            view_overview
+            view_overview,
+            view_profile
         ]
     )
 

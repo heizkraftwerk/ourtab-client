@@ -3,6 +3,7 @@ from .view_base import ViewBase
 from .view_register import ViewRegister
 from .view_login import ViewLogin
 from .view_overview import ViewOverview
+from .view_profile import ViewProfile
 from .manager import ViewManager
 
 
@@ -13,4 +14,5 @@ __all__ = [
     "ViewRegister",
     "ViewLogin",
     "ViewOverview"
+    "ViewProfile"
 ]
