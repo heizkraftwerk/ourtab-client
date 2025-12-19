@@ -24,7 +24,7 @@ class ViewManager:
         self._views = views
         self._base_view = base_view
         self._navigation_items = [
-            NavigationItem(route="/", label="Overview", icon=ft.Icons.DASHBOARD),
+            NavigationItem(route="/overview", label="Overview", icon=ft.Icons.DASHBOARD),
             NavigationItem(route="/login", label="Add", icon=ft.Icons.ADD),
             NavigationItem(route="/profile", label="Profile", icon=ft.Icons.ACCOUNT_CIRCLE),
         ]
